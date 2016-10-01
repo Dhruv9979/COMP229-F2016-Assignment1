@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Contact.Master.cs" Inherits="PortfolioSite.masterpages.Contact" %>
+<%@ Register Src="~/usercontrols/menuControl.ascx" TagName="menu" TagPrefix="top" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div id="wrap" class="container">
+
+             
+             <div class="row">
+                 <%--Add menu control--%>
+                 <top:menu ID="menubar" runat="server" /> 
+
+       
+   </div> 
+         
+          <div class="row">
+                  <div class="pull-left col-md-9 left" style="padding-left:3px;"> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+                  
+        
+        </asp:ContentPlaceHolder>
+                      </div>
+              </div>
+
+          <div class="row">
+            <div id="footer">
+                &copy; Copyright by 
+                <!-- Please leave Design by link visible or email me at : contact@blogliber.com -->
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

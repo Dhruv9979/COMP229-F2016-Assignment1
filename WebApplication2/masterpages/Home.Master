@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="PortfolioSite.masterpages.Home" %>
+
+<%@ Register Src="~/usercontrols/menuControl.ascx" TagName="menu" TagPrefix="top" %>
+<%--Author: AA
+Date Created : 09/22/2016--%>
+
+<%--This master page use to set design layout of index page about page and contact page --%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Portfolio Site</title>
+    <%--style and java script required for all pages --%>
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../scripts/jquery-1.9.1.js"></script>
+
+    <script src="../scripts/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <%--Header  content place holder to add specific style or script for specific page--%>
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div id="wrap" class="container">
+
+             
+             <div class="row">
+                 <%--Add menu control--%>
+                 <top:menu ID="menubar" runat="server" /> 
+
+       
+   </div>  
+              <div id="header" class="row">
+                  
+            <div class="banner col-md12">
+                
+                <div class="logo pull-left col-md-4">
+                    <img class ="longCircle" src="../images/DefaultUser.jpg" />
+                    <div>
+                       <h3> Dhruv Patel</h3>
+
+                    </div>
+                   
+                </div>
+                <div class ="pull-right col-md-7" style="padding-left:2px;padding-right:2px;">
+                    <img src="../images/i-quotes.jpg" style="width:100%;height:240px;" />
+                </div>
+                
+                <div class="clearfix"></div>
+                
+                <div class="text-info tagline">
+                <h4>In other’s happiness lies our own </h4>
+
+                </div>
+               
+
+            </div>
+
+
+
+           
+        </div>
+           
+             <div class="row">
+        
+                <div class=" col-md-2 pull-right right">
+                    
+                    <ul >
+                        <%--<li>
+                           <a href="#">  <img src="../images/instagram_icon.png" class="socialcion" /> </a>
+
+
+                        </li>--%>
+
+                                                <li>
+                                                  <a href="https://wwww.facebook.com/druv.patel">
+                                                        <img src="../images/facebook_icon.png"   class="socialcion" />
+                                                     
+                                                  </a>
+
+                        </li>
+
+
+                                                <li>
+                                                  <a href="https://www.linkedin.com/in/dhruv-patel-369903113"> <img src="../images/Linkedin_icon.png"  class="socialcion" /></a>
+
+                        </li>
+
+
+                                                <li>
+                                                  <a href="https://www.plus.google.com/117493838903371341088"> <img src="../images/google_plus_icon.png"  class="socialcion" /></a>
+
+                        </li>
+
+
+                    </ul>
+                    
+                </div>
+                <div class="pull-left col-md-9 left" style="padding-left:3px;">
+                  
+        <%--Html tag create templates for all pages under this master page--%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <%--Main content place holder to show other page content--%>
+
+
+        </asp:ContentPlaceHolder>
+
+        <%--Html tag create templates for all pages under this master page--%>
+      </div>
+             
+                 </div>
+              <div class="row">
+            <div id="footer">
+                &copy; Copyright by Dhruv Patel
+                
+            </div>
+        </div>
+
+             </div>
+    </form>
+</body>
+</html>

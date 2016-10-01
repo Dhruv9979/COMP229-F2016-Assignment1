@@ -1,0 +1,131 @@
+﻿*{margin:0; padding:0;}
+
+body {
+font-family: Arial;
+font-size: 12px; 
+background: #efefef;
+color: #232323; 
+margin:0; 
+padding:0;
+line-height: 150%;
+}
+
+a { color: #2375BF; text-decoration: none; }
+a:hover { border-bottom: 1px solid #2375BF; }
+
+img { border: none; } 
+img a { border:none; } 
+
+#wrap {
+/*width: 820px;
+margin: 20px auto 10px auto;*/
+}
+
+.right {
+    
+float: right;
+}
+
+.right h3 { color: #333; font-size: 21px; padding: 15px 0 10px 0; font-weight: 100;}
+.right p { padding: 10px 0; }
+.right ul { padding: 5px 0 15px 30px; list-style-type: none; }
+.right ul li { margin:5px; }
+
+.left {
+width: 210px;
+float: left;
+}
+.left h4 {
+padding: 0 0 0 10px;
+height: 50px;
+line-height: 50px;
+
+}
+.left ul { padding: 5px 0 15px 30px; color: #999999;}
+.left ul li { padding: 2px 0; }
+
+#footer {
+background: #d3d3d3;
+height: 30px;
+line-height: 30px;
+color: #fff;
+text-align: center;
+}
+#footer a { color: #fff; }
+#footer a:hover { text-decoration: underline; border: none; }
+
+.navbar-nav > li > a{cursor:pointer}
+.banner {
+     /*background :url(../images/banner1.jpg) no-repeat ;*/
+     background-color:#d3d3d3;
+     height:242px;
+}
+.logo 
+{
+    
+  margin-top: 40px;
+  margin-left: 10px;
+     
+}
+.tagline
+{
+
+    margin-left:10px;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 1px!important;
+    border: 1px solid transparent;
+}
+
+
+.smallCircle{
+   width: 45px;
+   height: 45px;
+ 
+   -moz-border-radius: 50px; 
+   -webkit-border-radius: 50px; 
+   -o-border-radius: 50px;
+   border-radius: 50px;
+  
+   float:left;
+   z-index: 70;
+   /*position:absolute;
+   left:35px;
+   top:35px;*/
+   cursor: hand;
+   cursor:pointer;
+}
+
+
+.longCircle{
+   width: 115px;
+   height: 115px;
+ 
+   -moz-border-radius: 75px; 
+   -webkit-border-radius: 75px; 
+   -o-border-radius: 75px;
+   border-radius: 75px;
+  
+   float:left;
+   z-index: 70;
+   /*position:absolute;
+   left:35px;
+   top:35px;*/
+   cursor: hand;
+   cursor:pointer;
+}
+
+.socialcion {
+    width:25px;
+}
+
+.tagline {
+    position:absolute;
+    top:50px;
+}
+.form-horizontal .control-label {
+    text-align:left!important;
+}
